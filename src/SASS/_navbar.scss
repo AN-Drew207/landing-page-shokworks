@@ -1,9 +1,13 @@
 #nav{
     align-items: center;
+    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    position: fixed;
+    top: 0;
     padding: 20px 2.5vw;
     width: 100vw;
+    z-index: 2;
     .navbar-content{
         align-items: center;
         display: flex;
@@ -42,6 +46,7 @@
                 
             }
             
+
             .active::after{
                 background-color: #185F7F;
                 content: "";
@@ -52,6 +57,7 @@
             }
         }
     }
+    /*Input de busqueda*/
     .navbar-search{
         display: flex;
         width: auto;
@@ -62,10 +68,11 @@
             width: 100%;
         }
     }
+
+    /*Boton menú hamburguesa*/
     .burguer-btn{
         display: flex;
         flex-direction: column;
-        z-index: 1;
         &::before{
             transition: 1s;
             border-radius: 2px;
@@ -87,6 +94,8 @@
             background-color: #185F7F;
         }
     }
+
+    /*Botón menu hamburguesa desplegado*/
     .burguer-btn-active{
         @extend .burguer-btn;
         &::before{
@@ -102,20 +111,16 @@
         }
     }
 }
-.btn-group{
-    display: flex;
-    .contact-us-btn{
-        background: transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat padding-box;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        width: 100%;
-    }
-}
+
+
+
+/*Menu hamburguesa desplegado*/
 .navbar-nav-container-collapse{
-    transition: 1s ease;
     background-color: #1B92C8;
-    position: absolute;
+    padding-top: 100px;
+    position: fixed;
+    top:0;
+    z-index: 1;
     width: 100vw;
     height: 100vh;
     .navbar-nav-collapse{
@@ -125,8 +130,19 @@
         justify-content: center;
         list-style: none;
         .navbar-nav-item-collapse{
-            margin-top: 10px;
+            cursor: pointer;
+            padding: 5px;
             color: #fff;
+            font-size: 20px;
+            &:hover{
+                transition: 0.25s ease-in;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                color:#1B92C8;
+                width: 100vw;
+            }
         }
     }
 }

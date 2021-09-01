@@ -1,0 +1,24 @@
+/*Boton blue*/
+.btn-group{
+    display: flex;
+    .btn-blue{
+        background: transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat padding-box;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        width: 100%;
+    }
+    .btn-white{
+        @extend .btn-blue;
+        background: #fff;
+        border: solid 1px #1B92C8;
+        color: #1B92C8;
+        &:hover{
+            transition: 0.25s ease-in;
+            background: transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat padding-box;
+            color: #fff;
+            border: solid 1px transparent;
+        }
+    }
+
+}

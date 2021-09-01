@@ -40,8 +40,6 @@ const NavbarComponent = () =>{
                 return "none"
             }
         });
-        document.querySelector("#burguer-collapse").classList.toggle("navbar-nav-container-collapse")
-        document.querySelector("#burguer-collapse").classList.toggle("navbar-nav-container-collapsed")
     }
 
     return( 
@@ -80,7 +78,7 @@ const NavbarComponent = () =>{
                     <input className="search" type="text" placeholder="Search here"/>
                 </div>
                 <div className="btn-group">
-                    <button className="contact-us-btn">Contact Us</button>
+                    <button className="btn-blue">Contact Us</button>
                 </div>
                 {
                     collapse &&
@@ -90,7 +88,9 @@ const NavbarComponent = () =>{
                 }
             </div>
         </nav>
-            <div id="burguer-collapse" style={{display:burguerButtonActive}}>
+        {
+            collapse &&
+            <div id="burguer-collapse" className="navbar-nav-container-collapse" style={{display:burguerButtonActive}}>
                     <ul className="navbar-nav-collapse">
                         <li className="navbar-nav-item-collapse active-collapse">
                             Home
@@ -112,6 +112,7 @@ const NavbarComponent = () =>{
                         </li>
                     </ul>
                 </div>
+        }
         </>
     )
 }
