@@ -57,6 +57,12 @@
         }
     }
 
+
+    /*Ajustes de los titulos de los articulos*/
+    .title{
+        font-size: 40px;
+        width: 75%;
+    }
 }
 
 @media (min-width:1000px){
@@ -69,14 +75,12 @@
     .btn-group{
         .btn-blue{
             font-size: 17px;
-            padding: 15px;
+            padding: 10px 20px;
         }
     }
     #main-section{
         .img-container{
-            .img-main{
-                width: 40vw;
-            }
+            height: 50%;
         }
         .main-title{
             font-size: 40px;
@@ -135,7 +139,7 @@
     .btn-group{
         .btn-blue{
             font-size: 15px;
-            padding: 10px;
+            padding: 7.5px 10px;
         }
     }
 
@@ -144,13 +148,25 @@
     #main-section{
         .img-container{
             height: 40%;
-            .img-main{
-                width: 60vw;
-            }
         }
         .main-title{
             font-size: 40px;
         }
+    }
+
+
+    /*Ajustes de los artículos (process about work y  we are here to always help you)*/
+    .article-section{
+        .content-article{
+            .paragraph-article{
+                font-size: 12px;
+            }
+        }        
+    }
+
+    /*Ajuste títulos de los articulos*/
+    .title{
+        font-size: 30px;
     }
 }
 
@@ -162,6 +178,7 @@
         }
     }
     .btn-group{
+        min-width: 90px;
         .btn-blue{
             font-size: 13px;
             padding: 7.5px;

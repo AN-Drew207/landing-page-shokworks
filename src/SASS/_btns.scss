@@ -1,12 +1,12 @@
 /*Boton blue*/
 .btn-group{
     display: flex;
+    width: max-content;
     .btn-blue{
         background: transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat padding-box;
         border: none;
         border-radius: 5px;
         color: #fff;
-        width: 100%;
     }
     .btn-white{
         @extend .btn-blue;

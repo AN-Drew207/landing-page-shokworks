@@ -1,0 +1,12 @@
+.section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 0px;
+    .title{
+        text-align: center;
+        width: 50%;
+    }
+
+}
