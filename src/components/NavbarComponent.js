@@ -50,6 +50,7 @@ const NavbarComponent = () =>{
             </div>
             <div className="navbar-content">
                 {
+                /*Menú desktop view*/ 
                 collapse ||
                 <div className="navbar-nav-container">
                     <ul className="navbar-nav">
@@ -81,6 +82,7 @@ const NavbarComponent = () =>{
                     <button className="btn-blue">Contact Us</button>
                 </div>
                 {
+                    /*Control de retorno del Burguer menú button*/
                     collapse &&
                 <div className="burguer-btn" id="burguer-btn" onClick={handleBurguer}>
                     <span></span>
@@ -89,6 +91,7 @@ const NavbarComponent = () =>{
             </div>
         </nav>
         {
+            /*Menu desplegable*/
             collapse &&
             <div id="burguer-collapse" className="navbar-nav-container-collapse" style={{display:burguerButtonActive}}>
                     <ul className="navbar-nav-collapse">

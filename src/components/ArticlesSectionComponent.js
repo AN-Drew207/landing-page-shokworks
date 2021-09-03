@@ -5,7 +5,7 @@ import imgSecond from '../img/article-image-5@2x.png'
 const ArticleComponent = () =>{
     return (
         <>
-            <section class="article-section">
+            <section className="article-section">
                 <article className="content-article">
                     <h2 className="title">
                         The Process About Our Work
@@ -21,7 +21,7 @@ const ArticleComponent = () =>{
                     <img className="img-article" src={imgFirst} alt="stock" />
                 </div>
             </section>
-            <section class="article-section">
+            <section className="article-section">
                 <div className="img-container">
                     <img className="img-article" src={imgSecond} alt="stock" />
                 </div>
@@ -30,7 +30,8 @@ const ArticleComponent = () =>{
                         We are here to <strong>always help</strong>  you
                     </h2>
                     <p className="paragraph-article">
-                    Shokworks team provide solutions and guidance to every project, taking the project vision to high level.
+                        Shokworks team provide solutions and guidance to every project, 
+                        taking the project vision to high level.
                     </p>
                 </article>
             </section>

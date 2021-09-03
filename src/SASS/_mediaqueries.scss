@@ -63,6 +63,12 @@
         font-size: 40px;
         width: 75%;
     }
+
+    /*Ajuste links footer*/
+    
+    .link-footer{
+        font-size: 12px!important;
+    }
 }
 
 @media (min-width:1000px){
@@ -136,6 +142,7 @@
         }
     }
 
+    /*Ajuste de botones*/
     .btn-group{
         .btn-blue{
             font-size: 15px;
@@ -168,20 +175,51 @@
     .title{
         font-size: 30px;
     }
+
+    /*Ajuste partners and clients*/
+    .partners-clients{
+        width: 85vw;
+        .partners-clients-column, .partners-clients-column-center{
+            .partners-container{
+                padding: 20px;
+                height: 175px;
+                width: 80%;
+                .img-container{
+                    height: 85%;
+                    .img-partners{
+                        max-height: 100px;
+                        max-width: 150px;
+                        width: 100%;
+                        
+                    }
+                    #mobile{
+                        max-width: 60px;
+                    }
+    
+                }
+            }
+        }
+    }
+
+    /*Ajustes footer*/
+    #footer{
+        .img-container{
+            min-width: 45vw;
+            max-width: 60vw;
+        }
+        .links-footer-container{
+            grid-template-columns: repeat(2,40%);
+        }
+    }
 }
 
 
 @media (max-width:699px){
+
+    /*Ajuste navbar*/
     .navbar-search{
         .search{
             font-size: 13px;
-        }
-    }
-    .btn-group{
-        min-width: 90px;
-        .btn-blue{
-            font-size: 13px;
-            padding: 7.5px;
         }
     }
     .navbar-img-container{
@@ -190,9 +228,135 @@
             height:30px;
         }
     }
+
+    /*Ajuste tamaño de boton*/
+    .btn-group{
+        min-width: 90px;
+        .btn-blue{
+            font-size: 13px;
+            padding: 7.5px;
+        }
+    }
+
     #main-section{
         .main-title{
             font-size: 25px;
+        }
+    }
+
+    /*Ajuste clients and partners*/
+
+    .partners-clients{
+        width: 100vw;
+        .partners-clients-column, .partners-clients-column-center{
+            .partners-container{
+                font-size: 10px;
+                padding: 20px;
+                height: 150px;
+                width: 80%;
+                .img-container{
+                    height: 85%;
+                    .img-partners{
+                        max-height: 75px;
+                        max-width: 100px;
+                        width: 100%;
+                        
+                    }
+                    #mobile{
+                        max-width: 40px;
+                    }
+                }
+                &:hover{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    /*Ajustes al Contact Form*/
+    #contact-form{
+        .section-form-container{
+            grid-template-columns: auto;
+            .img-container{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+@media (max-width:600px) {
+    .section{
+        .title{
+            width: 80%!important;
+        }
+    }
+    .article-section{
+        grid-template-columns: auto;
+        padding: 5%;
+        .title{
+            width: 100%;
+        }
+        .content-article{
+            *{
+                margin-bottom: 10px;
+            }
+            button{
+                margin: 0;
+            }
+        }
+        .img-container{
+            .img-article{
+                display: none;
+            }
+        }
+    }
+
+    /*Ajustes footer*/
+    #footer{
+        .links-footer-container{
+            grid-template-columns: repeat(2,50%);
+        }
+    }
+}
+
+@media (max-width:499px){
+    .partners-clients{
+        grid-template-columns: repeat(2,45%);
+        .partners-clients-column, .partners-clients-column-center{
+            margin-top: 0;
+            .partners-container{
+                &:hover{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px){
+        /*Ajustes footer*/
+        #footer{
+            .img-container{
+                min-width: 60vw;
+                max-width: 80vw;
+            }
+            .links-footer-container{
+                grid-template-columns: 80%;
+            }
+        }
+
+}
+
+@media (max-width:300px){
+    .partners-clients{
+        grid-template-columns: 90%;
+        .partners-clients-column, .partners-clients-column-center{
+            .partners-container{
+                &:hover{
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
