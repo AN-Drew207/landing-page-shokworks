@@ -43,7 +43,10 @@
                 #mobile{
                     width: 80px;
                 }
-
+                #kinesis{
+                    transition: 0.25s ease-in;
+                    transform: translateX(5px);
+                }
             }
             .paragraph-container{
                 display: flex;
@@ -60,12 +63,20 @@
             }
 
             &:hover{
-                transition: 1s ease;
+                transition: 0.25s ease;
                 background-color: #1B92C8;
                 color: #fff;
                 font-size: 14px;
                 .white{
                     filter: brightness(0) invert(1);
+                }
+                #kinesis{
+                    transition: 0.25s ease-in;
+                    transform: translateX(0px);
+                }
+                #good-times{
+                    transition: 0.25s ease-in;
+                    transform: translateX(2.5px);
                 }
             }
         }

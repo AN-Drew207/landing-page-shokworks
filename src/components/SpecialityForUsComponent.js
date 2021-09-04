@@ -51,15 +51,18 @@ const SpecialityForUsComponent = () =>{
 
     useEffect(()=>{
         if(actualItem!==0){
-            for(var i=0;i<articlesShown.length;i++){
-                var xd=document.getElementsByClassName(articlesShown[i].publishedAt)
-                for(var j=0;j<xd.length;j++){
+            console.log(articlesShown)
+            var i,j;
+            for(i=0;i<articlesShown.length;i++){
+                var xd=document.getElementsByClassName(articlesShown[i].url)
+                for( j=0;j<xd.length;j++){
                     xd[j].classList.add("blur")
                 }
             }
-            for(var i=actualItem;i<actualItem+itemsPerView-1;i++){
-               var xd=document.getElementsByClassName(articlesShown[i].publishedAt)
-               for(var j=0;j<xd.length;j++){
+            for(i=actualItem;i<actualItem+itemsPerView-1;i++){
+                xd=document.getElementsByClassName(articlesShown[i].url)
+                
+               for(j=0;j<xd.length;j++){
                    xd[j].classList.remove("blur")
                }
             }
@@ -104,9 +107,9 @@ const SpecialityForUsComponent = () =>{
                         articlesShown.map(article =>{
                             return(
                                 <div className="carousel-item-container" style={translate}>
-                                    <div className={"carousel-item blur "+article.publishedAt}>
-                                        <div className={"img-container-carousel blur "+article.publishedAt}>
-                                            <img className="carousel-item-img" src={article.urlToImage} alt="" />
+                                    <div className={"carousel-item blur "+article.url}>
+                                        <div className={"img-container-carousel blur "+article.url}>
+                                            <img className="carousel-item-img" src={article.urlToImage} alt={article.source.name} />
                                         </div>
                                         <div  className="content-carousel-item">
                                             <h5 className="title-carousel-item">{article.title}</h5>

@@ -8,6 +8,11 @@
             width: 100%;
         }
     }
+
+    .navbar-search{
+        width: 35%;
+    }
+
     .btn-group{
         min-width: 125px;
     }
@@ -109,6 +114,9 @@
     /*Ajustando la navbar luego esconder el menú y mostrar el menú hamburguesa*/
     .navbar-content{
         justify-content: flex-end;
+    }
+    .navbar-search{
+        width: 50%;
     }
     .navbar-img-container{
         width: auto;
@@ -252,6 +260,7 @@
         }
     }
     .navbar-search{
+        width: 50%;
         .search{
             font-size: 15px;
             padding: 5px 2.5px;
@@ -537,6 +546,7 @@
 }
 
 @media (max-width:600px) {
+
     .section{
         .title{
             width: 80%!important;
@@ -563,6 +573,9 @@
         }
     }
 
+
+
+    #speciality-for-us{
         .carousel{
             .carousel-inner{ 
                 .blur{
@@ -595,6 +608,7 @@
                 }
             }
         }
+    }
 
     /*Ajustes de tamaño carousel what clients says*/
     #what-says{
@@ -634,6 +648,34 @@
         }
     }
 
+    /*Ajustes What is speciality for us */
+    #speciality-for-us{
+        .carousel{
+            .carousel-inner{ 
+                .carousel-item-container{               
+                    .carousel-item{
+                        .img-container-carousel{
+                            height: 100px;
+                            width: 100px;
+                            .carousel-item-img{
+                                height: 100px;
+                                width: 100px;
+                            }
+                        }
+                        .content-carousel-item{
+                            .title-carousel-item{
+                                font-size: 11px!important;
+                            }
+                            .description-carousel-item{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     /*Ajuste de tamaño carousel what clients says*/
     #what-says{
         .carousel-special{   
@@ -664,7 +706,7 @@
             .img1{
                 height: 80px;
                 top: 20%;
-                left: 42%;
+                left: 40%;
             }
             .img2{
                 height: 60px!important;
@@ -688,6 +730,36 @@
 }
 
 @media (max-width:400px){
+
+    .navbar-search{
+        .search-button{
+            padding: 5px;
+            width: 20%!important;
+        }
+    }
+
+    #speciality-for-us{
+        .carousel{
+            .carousel-inner{ 
+                .blur{
+                    max-height: 300px;
+                }
+                .carousel-item-container{              
+                    .carousel-item{
+                        height: 350px;
+                        .img-container-carousel{
+                            height: 75px;
+                            width: 75px;
+                            .carousel-item-img{
+                                height: 75px;
+                                width: 75px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
         /*Ajustes footer*/
         #footer{
             .img-container{
@@ -715,8 +787,8 @@
     #what-says{
         .carousel-special{
             .img1{
-                top: 18%;
-                left: 38%;
+                top: 16%;
+                left: 36%;
             }
         }
     }
