@@ -1,5 +1,6 @@
 
 @media (min-width:1400px){
+    /*Ajustes tamaño de logo navbar*/
     .navbar-img-container{
         width: 20vw;
         .logo{
@@ -8,15 +9,17 @@
             width: 100%;
         }
     }
-
+    /*Ajuste de tamaño del buscador*/
     .navbar-search{
         width: 35%;
     }
-
+     /*Ajuste de tamaño de container de botones principales*/
     .btn-group{
         min-width: 125px;
     }
     
+    /*Ajuste de tamaño de carousel what is speciality for us*/
+    /*3 items visibles*/
     #speciality-for-us{
         .carousel{
             .blur{
@@ -56,12 +59,12 @@
 
 @media (min-width:1500px){
 
+    /*Ajuste de tamaño de carousel what is speciality for us*/
     #speciality-for-us{
         .carousel{
             .blur{
                 max-height: 400px;
             }
-    
             .carousel-inner{ 
                 .carousel-item{
                     border-radius: 5px;
@@ -99,6 +102,7 @@
 }
 
 @media (max-width:1499px){
+    /*Ajuste de tamaño de carousel what our clients says*/
     #what-says{
         .carousel-special{   
             .img1{
@@ -111,7 +115,7 @@
 }
 
 @media(max-width:1399px){
-    /*Ajustando la navbar luego esconder el menú y mostrar el menú hamburguesa*/
+    /*Ajustando la navbar luego esconder el menú*/
     .navbar-content{
         justify-content: flex-end;
     }
@@ -126,9 +130,13 @@
             width: 331px;
         }
     }
+
+    /*Ajustes del container de los botones principales*/
     .btn-group{
         min-width: 105px;
     }
+
+    /*Ajustes de tamaño botón hamburguesa*/
     .burguer-btn{
         width: 30px;
         &::before{
@@ -167,7 +175,7 @@
         font-size: 12px!important;
     }
 
-    /*Ajustes carousel*/
+    /*Ajustes carousel what is speaciality for us*/
     #speciality-for-us{
         .carousel{
             .carousel-inner{ 
@@ -191,6 +199,7 @@
         }
     }
 
+    /*Ajuste de tamaño de carousel what our clients says*/
     #what-says{
         .carousel-special{   
             .img1{
@@ -204,6 +213,8 @@
 }
 
 @media (max-width:1200px){
+    /*Ajuste de tamaño de carousel what is speciality for us*/
+    /*2 items visibles*/
     #speciality-for-us{
         .carousel{
             .carousel-inner{
@@ -213,6 +224,8 @@
             }
         }
     }
+
+    /*Ajuste de tamaño de carousel what our clients says*/
     #what-says{
         .carousel-special{   
             .img1{
@@ -225,18 +238,23 @@
 }
 
 @media (min-width:1000px){
+    /*Ajuste de tamaño del buscador*/
     .navbar-search{
         .search{
             font-size: 17px;
             padding: 10px 5px;
         }
     }
+
+    /*Ajuste de tamaño de los botones*/
     .btn-group{
         .btn-blue{
             font-size: 17px;
             padding: 10px 20px;
         }
     }
+
+    /*Ajustes de tamaño de la sección principal*/
     #main-section{
         .img-container{
             height: 50%;
@@ -266,6 +284,8 @@
             padding: 5px 2.5px;
         }
     }
+
+    /*Ajustes de tamaño del botón hamburguesa*/
     .burguer-btn{
         width: 20px;
         &::before{
@@ -325,7 +345,7 @@
         }        
     }
 
-    /*Ajuste títulos de los articulos*/
+    /*Ajuste títulos de las secciones*/
     .title{
         font-size: 30px;
     }
@@ -335,7 +355,6 @@
         .carousel{
             .carousel-inner{
                 .carousel-item-container{
-                    width: 33vw;
                     .carousel-item{
                         .img-container-carousel{
                                 height: 150px;
@@ -408,6 +427,9 @@
 }
 
 @media (max-width:799px){
+
+    /*Ajuste de tamaño what is speciality for Us*/
+    /*3 items visibles*/
     #speciality-for-us{
         .carousel{
             .carousel-inner{ 
@@ -434,6 +456,8 @@
             }
         }
     }
+
+    /*Ajuste de tamaño what our clients says*/
     #what-says{
         .carousel-special{   
             .img1{
@@ -546,12 +570,14 @@
 }
 
 @media (max-width:600px) {
-
+    /*Ajuste de tamaño de todas las secciones*/
     .section{
         .title{
             width: 80%!important;
         }
     }
+
+    /*Ajuste de secciones de articulos (process about work y  we are here to always help you)*/
     .article-section{
         grid-template-columns: auto;
         padding: 5%;
@@ -574,7 +600,7 @@
     }
 
 
-
+    /*Ajustes de tamaño carousel speciality for us*/
     #speciality-for-us{
         .carousel{
             .carousel-inner{ 
@@ -636,6 +662,7 @@
 }
 
 @media (max-width:499px){
+    /*Ajustes de grid y de tamaño de clientes y partners*/
     .partners-clients{
         grid-template-columns: repeat(2,45%);
         .partners-clients-column, .partners-clients-column-center{
@@ -701,6 +728,7 @@
 }
 
 @media (max-width: 450px) {
+    /*Ajustes de colocación y de tamaño del carousel what our clients says*/
     #what-says{
         .carousel-special{
             .img1{
@@ -730,7 +758,7 @@
 }
 
 @media (max-width:400px){
-
+    /*ajuste de tamaño navbar-search*/
     .navbar-search{
         .search-button{
             padding: 5px;
@@ -738,6 +766,7 @@
         }
     }
 
+    /*ajuste de tamaño carousel speciality for us*/
     #speciality-for-us{
         .carousel{
             .carousel-inner{ 
@@ -761,19 +790,21 @@
         }
     }
         /*Ajustes footer*/
-        #footer{
-            .img-container{
-                min-width: 60vw;
-                max-width: 80vw;
-            }
-            .links-footer-container{
-                grid-template-columns: 80%;
-            }
+    #footer{
+        .img-container{
+            min-width: 60vw;
+            max-width: 80vw;
         }
+        .links-footer-container{
+            grid-template-columns: 80%;
+        }
+    }
 
 }
 
 @media (max-width:300px){
+
+    /*Ajustes de grid de los clientes y partners*/
     .partners-clients{
         grid-template-columns: 90%;
         .partners-clients-column, .partners-clients-column-center{
@@ -784,6 +815,8 @@
             }
         }
     }
+
+    /*Ajustes de colocación what clients says*/
     #what-says{
         .carousel-special{
             .img1{
