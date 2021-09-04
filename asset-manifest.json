@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/landing-page-shokworks/static/css/main.d1e74628.chunk.css",
+    "main.js": "/landing-page-shokworks/static/js/main.d816ea57.chunk.js",
+    "main.js.map": "/landing-page-shokworks/static/js/main.d816ea57.chunk.js.map",
+    "runtime-main.js": "/landing-page-shokworks/static/js/runtime-main.10520544.js",
+    "runtime-main.js.map": "/landing-page-shokworks/static/js/runtime-main.10520544.js.map",
+    "static/js/2.77f72e26.chunk.js": "/landing-page-shokworks/static/js/2.77f72e26.chunk.js",
+    "static/js/2.77f72e26.chunk.js.map": "/landing-page-shokworks/static/js/2.77f72e26.chunk.js.map",
+    "index.html": "/landing-page-shokworks/index.html",
+    "static/css/main.d1e74628.chunk.css.map": "/landing-page-shokworks/static/css/main.d1e74628.chunk.css.map",
+    "static/js/2.77f72e26.chunk.js.LICENSE.txt": "/landing-page-shokworks/static/js/2.77f72e26.chunk.js.LICENSE.txt",
+    "static/media/Ellipse 344.946ba439.png": "/landing-page-shokworks/static/media/Ellipse 344.946ba439.png",
+    "static/media/Ellipse 346.c142193a.png": "/landing-page-shokworks/static/media/Ellipse 346.c142193a.png",
+    "static/media/Ellipse 347.686e3564.png": "/landing-page-shokworks/static/media/Ellipse 347.686e3564.png",
+    "static/media/Ellipse 348.77e47564.png": "/landing-page-shokworks/static/media/Ellipse 348.77e47564.png",
+    "static/media/Ellipse 350.24a7a7be.png": "/landing-page-shokworks/static/media/Ellipse 350.24a7a7be.png",
+    "static/media/Group 2486@2x.a010dc0f.png": "/landing-page-shokworks/static/media/Group 2486@2x.a010dc0f.png",
+    "static/media/main.scss": "/landing-page-shokworks/static/media/Group_2258@2x.5fad0da7.png",
+    "static/media/Group_2788@2x.2ea83d1d.png": "/landing-page-shokworks/static/media/Group_2788@2x.2ea83d1d.png",
+    "static/media/Group_94@2x.a3629a1b.png": "/landing-page-shokworks/static/media/Group_94@2x.a3629a1b.png",
+    "static/media/article-image-5@2x.e1e58cab.png": "/landing-page-shokworks/static/media/article-image-5@2x.e1e58cab.png",
+    "static/media/banner-1@2x.080fc23a.png": "/landing-page-shokworks/static/media/banner-1@2x.080fc23a.png",
+    "static/media/big_immersity_logo@2x.d012d495.png": "/landing-page-shokworks/static/media/big_immersity_logo@2x.d012d495.png",
+    "static/media/community1@2x.f5eb7cc0.png": "/landing-page-shokworks/static/media/community1@2x.f5eb7cc0.png",
+    "static/media/logo-min.86b4af81.png": "/landing-page-shokworks/static/media/logo-min.86b4af81.png",
+    "static/media/logo_ipass@2x.cb5b63c0.png": "/landing-page-shokworks/static/media/logo_ipass@2x.cb5b63c0.png",
+    "static/media/logo_splash@2x.7806ce54.png": "/landing-page-shokworks/static/media/logo_splash@2x.7806ce54.png",
+    "static/media/map_icon.4dd80cd4.png": "/landing-page-shokworks/static/media/map_icon.4dd80cd4.png",
+    "static/media/what-can-you-build@2x.3bda3df7.png": "/landing-page-shokworks/static/media/what-can-you-build@2x.3bda3df7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10520544.js",
+    "static/js/2.77f72e26.chunk.js",
+    "static/css/main.d1e74628.chunk.css",
+    "static/js/main.d816ea57.chunk.js"
+  ]
+}
