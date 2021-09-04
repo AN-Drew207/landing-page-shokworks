@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/landing-page-shokworks/static/css/main.d1e74628.chunk.css",
-    "main.js": "/landing-page-shokworks/static/js/main.d816ea57.chunk.js",
-    "main.js.map": "/landing-page-shokworks/static/js/main.d816ea57.chunk.js.map",
+    "main.js": "/landing-page-shokworks/static/js/main.f44f2d1a.chunk.js",
+    "main.js.map": "/landing-page-shokworks/static/js/main.f44f2d1a.chunk.js.map",
     "runtime-main.js": "/landing-page-shokworks/static/js/runtime-main.10520544.js",
     "runtime-main.js.map": "/landing-page-shokworks/static/js/runtime-main.10520544.js.map",
     "static/js/2.77f72e26.chunk.js": "/landing-page-shokworks/static/js/2.77f72e26.chunk.js",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.10520544.js",
     "static/js/2.77f72e26.chunk.js",
     "static/css/main.d1e74628.chunk.css",
-    "static/js/main.d816ea57.chunk.js"
+    "static/js/main.f44f2d1a.chunk.js"
   ]
 }
