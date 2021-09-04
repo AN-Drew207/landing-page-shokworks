@@ -32,6 +32,20 @@
                 font-size: 17px;
                 text-align: center;
                 margin: 10px;
+                &:hover{
+                    align-items: center;
+                    color:#185F7F;
+                    display: flex;
+                    flex-direction: column;
+                    transition: 0.25s;
+                    &::after{
+                        background-color: #185F7F;
+                        content: "";
+                        height: 10px;
+                        border-radius: 50%;
+                        width: 10px;
+                    }
+                }
             }
             
             /*Estilo para nav-item actual*/
@@ -42,8 +56,6 @@
                 font-weight: 800;
                 flex-direction: column;
                 justify-content: center;
-                
-                
             }
             
 
@@ -60,12 +72,31 @@
     /*Input de busqueda*/
     .navbar-search{
         display: flex;
-        width: auto;
+        width: 50%;
         .search{
             display: flex;
             border: solid 1px #C6BAF8;
             border-radius: 4px;
-            width: 100%;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-right: none;
+            width: 80%;
+        }
+        .search-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            border: solid 1px #C6BAF8;
+            border-left:none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            cursor: pointer;
+            width: 10%;
+            img{
+                width: 100%;
+            }
         }
     }
 

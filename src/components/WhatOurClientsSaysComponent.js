@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react' 
 import left from '../img/arrow-left@2x.png'
 import right from '../img/arrow-right@2x.png'
+import leftQuotetionMark from '../img/quote-left-1@2x.png'
+import rightQuotetionMark from '../img/quote-left@2x.png'
 import firstPerson from '../img/Ellipse 350.png'
 import secondPerson from '../img/Ellipse 348.png'
 import thirdPerson from '../img/Ellipse 347.png'
@@ -209,11 +211,11 @@ const WhatOurClientsSays = () =>{
                         <div className="img-testimony">
                         </div>
                         <div className="testimony-container">
-                            <img src="" alt="" />
+                            <img className="quotetion" src={leftQuotetionMark} alt="" />
                             <h4 className="testimony">
                                 {actualTestimony.testimony}
                             </h4>
-                            <img src="" alt="" />
+                            <img className="quotetion" src={rightQuotetionMark} alt="" />
                         </div>
                         <p className="testimony-author">
                             {actualTestimony.author}

@@ -7,6 +7,7 @@ const SpecialityForUsComponent = () =>{
 
     const [articlesShown, setArticlesShown]=useState([])
     const [actualPos, setActualPos]=useState(-50)
+    const [actualItem, setActualItem]=useState(0)
     const [itemsPerView, setItemsPerView] =useState(4);
     const [translate, setTranslate]=useState({transform: 0})
 
@@ -29,6 +30,7 @@ const SpecialityForUsComponent = () =>{
             .then(json => {
                 setArticlesShown(()=>[json.articles[json.articles.length-1],...json.articles,json.articles[0]])
                 setTranslate(()=>{return{transition:"0.5s",transform: `translateX(${actualPos}%)`}})
+                setActualItem(()=>1)
                 window.addEventListener('resize', ()=>{
                     if(window.screen.width<800){
                         setItemsPerView(2)
@@ -42,9 +44,27 @@ const SpecialityForUsComponent = () =>{
                     }    
                     setActualPos(-50)
                     setTranslate({transition:"0.5s",transform: `translateX(${-50}%)`})
+                    setActualItem(()=>1)
                 })
             })
     },[])
+
+    useEffect(()=>{
+        if(actualItem!==0){
+            for(var i=0;i<articlesShown.length;i++){
+                var xd=document.getElementsByClassName(articlesShown[i].publishedAt)
+                for(var j=0;j<xd.length;j++){
+                    xd[j].classList.add("blur")
+                }
+            }
+            for(var i=actualItem;i<actualItem+itemsPerView-1;i++){
+               var xd=document.getElementsByClassName(articlesShown[i].publishedAt)
+               for(var j=0;j<xd.length;j++){
+                   xd[j].classList.remove("blur")
+               }
+            }
+        }
+    },[actualItem, itemsPerView])
 
 
     const leftMove =()=>{
@@ -52,9 +72,11 @@ const SpecialityForUsComponent = () =>{
             if(actualPos===-50){
                 setTranslate(()=>{return{transition:"0.5s",transform: `translateX(${-(((articlesShown.length-itemsPerView))*100)+50}%)`}})
                 setActualPos(()=>-(((articlesShown.length-itemsPerView))*100)+50)
+                setActualItem(articlesShown.length-itemsPerView);
             }else{
                 setTranslate(()=>{return{transition:"0.5s",transform: `translateX(${actualPos+100}%)`}})
                 setActualPos(prev=>prev+100)
+                setActualItem(prev=>prev-1)
             }
 
     }
@@ -64,9 +86,11 @@ const SpecialityForUsComponent = () =>{
         if(actualPos===-(((articlesShown.length-itemsPerView))*100)+50){
             setTranslate(()=>{return{transition:"0.5s",transform: `translateX(${-50}%)`}})
             setActualPos(()=>-50)
+            setActualItem(1);
         }else{
             setTranslate(()=>{return{transition:"0.5s",transform: `translateX(${actualPos-100}%)`}})
             setActualPos(prev=>prev-100)
+            setActualItem(prev=>prev+1)
         }
         
     }
@@ -80,8 +104,8 @@ const SpecialityForUsComponent = () =>{
                         articlesShown.map(article =>{
                             return(
                                 <div className="carousel-item-container" style={translate}>
-                                    <div className={"carousel-item "+article.publishedAt}>
-                                        <div className={"img-container-carousel "+article.publishedAt}>
+                                    <div className={"carousel-item blur "+article.publishedAt}>
+                                        <div className={"img-container-carousel blur "+article.publishedAt}>
                                             <img className="carousel-item-img" src={article.urlToImage} alt="" />
                                         </div>
                                         <div  className="content-carousel-item">

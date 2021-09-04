@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react' 
 import logo from '../img/Group 2486@2x.png'
 import logomini from '../img/logo-min.png'
+import search from '../img/search.png'
 
 const NavbarComponent = () =>{
 
@@ -77,6 +78,7 @@ const NavbarComponent = () =>{
                 }
                 <div className="navbar-search">
                     <input className="search" type="text" placeholder="Search here"/>
+                    <button className="search-button"><img src={search} alt="" /></button>
                 </div>
                 <div className="btn-group">
                     <button className="btn-blue">Contact Us</button>
