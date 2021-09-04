@@ -23,3 +23,26 @@
     }
 
 }
+.btn-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    .btn{
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        margin: 0px 10px;
+        padding: 5px;
+        width: 30px;
+        img{
+            width: 100%;
+        }
+    }
+}

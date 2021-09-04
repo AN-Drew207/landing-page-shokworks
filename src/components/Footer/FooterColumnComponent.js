@@ -9,7 +9,7 @@ const FooterColumnComponent = ({links, title}) =>{
                 {
                 links.map(link=>{
                     return(
-                        <li className="footer-list-item">
+                        <li key={link} className="footer-list-item">
                             <h6 className="link-footer">{link}</h6>
                         </li>
                     )

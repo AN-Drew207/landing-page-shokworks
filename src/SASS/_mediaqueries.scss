@@ -1,5 +1,4 @@
 
-
 @media (min-width:1400px){
     .navbar-img-container{
         width: 20vw;
@@ -13,7 +12,97 @@
         min-width: 125px;
     }
     
+    #speciality-for-us{
+        .carousel{
+            .blur{
+                max-height: 350px;
+            }
+            .carousel-inner{ 
+                .carousel-item-container{
+                    flex-shrink: 0;
+                    width: 25vw;
+                }
+                .carousel-item{
+                    margin: 0px 30px;
+                    height: 400px;
+                    padding: 20px;
+                    .img-container-carousel{
+                        height: 200px;
+                        width: 200px;
+                        .carousel-item-img{
+                            height: 200px;
+                            width: 200px;
+                        }
+                    }
+                    .content-carousel-item{
+                        .title-carousel-item{
+                            font-size: 15px;
+                        }
+                        .description-carousel-item{
+                            font-size: 12px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+}
+
+@media (min-width:1500px){
+
+    #speciality-for-us{
+        .carousel{
+            .blur{
+                max-height: 400px;
+            }
+    
+            .carousel-inner{ 
+                .carousel-item{
+                    border-radius: 5px;
+                    height: 500px;
+                    .img-container-carousel{
+                        height: 225px;
+                        width: 225px;
+                        margin-bottom: 15px;
+                        .carousel-item-img{
+                            height: 225px;
+                            width: 225px;
+                        }
+                    }
+                    .content-carousel-item{                        
+                        .title-carousel-item{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*Ajuste carousel what our Clients says*/
+
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 200px;
+                top: 5%;
+                left: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width:1499px){
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 150px;
+                top: 15%;
+                left: 45%;
+            }
+        }
+    }
 }
 
 @media(max-width:1399px){
@@ -68,6 +157,62 @@
     
     .link-footer{
         font-size: 12px!important;
+    }
+
+    /*Ajustes carousel*/
+    #speciality-for-us{
+        .carousel{
+            .carousel-inner{ 
+                .carousel-item{
+                    height: 400px;
+                    .img-container-carousel{
+                        height: 175px;
+                        width: 175px;
+                        .carousel-item-img{
+                            height: 175px;
+                            width: 175px;
+                        }
+                    }
+                    .content-carousel-item{
+                        .title-carousel-item{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 150px;
+                top: 15%;
+                left: 44.5%;
+            }
+        }
+    }
+
+}
+
+@media (max-width:1200px){
+    #speciality-for-us{
+        .carousel{
+            .carousel-inner{
+                .carousel-item-container{
+                    width: 33vw;
+                }
+            }
+        }
+    }
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 150px;
+                top: 14%;
+                left: 43.5%;
+            }
+        }
     }
 }
 
@@ -176,6 +321,34 @@
         font-size: 30px;
     }
 
+    /*Ajuste Carousel What is Speciality For Us*/
+    #speciality-for-us{
+        .carousel{
+            .carousel-inner{
+                .carousel-item-container{
+                    width: 33vw;
+                    .carousel-item{
+                        .img-container-carousel{
+                                height: 150px;
+                                width: 150px;
+                            .carousel-item-img{
+                                height: 150px;
+                                width: 150px;
+                            }
+                        }
+                    }
+                    .content-carousel-item{
+                        .title-carousel-item{
+                            text-align: center;
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     /*Ajuste partners and clients*/
     .partners-clients{
         width: 85vw;
@@ -201,6 +374,18 @@
         }
     }
 
+    /*Ajustes carousel what clients says*/
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 150px;
+                top: 12.5%;
+                left: 41%;
+            }
+        }
+    }
+
+
     /*Ajustes footer*/
     #footer{
         .img-container{
@@ -209,6 +394,61 @@
         }
         .links-footer-container{
             grid-template-columns: repeat(2,40%);
+        }
+    }
+}
+
+@media (max-width:799px){
+    #speciality-for-us{
+        .carousel{
+            .carousel-inner{ 
+                .blur{
+                    max-height: 300px;
+                    .title-carousel-item{
+                        font-size: 11px!important;
+                    }
+                }
+                .carousel-item-container{
+                    width: 55vw;
+                }
+                .carousel-item{
+                    height: 350px;
+                    .img-container-carousel{
+                        height: 150px;
+                        width: 150px;
+                        .carousel-item-img{
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 150px;
+                top: 12.5%;
+                left: 40%;
+            }
+            .img2{
+                height: 80px!important;
+            }
+            .img5{
+                height: 70px!important;
+            }
+            .person-container{
+                .testimony-container{
+                    .testimony{
+                        font-size: 14px;
+                    }
+                    
+                }
+                .testimony-author{
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
@@ -282,6 +522,17 @@
             }
         }
     }
+
+    /*Ajustes carousel what clients says*/
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 125px;
+                top: 17%;
+                left: 40%;
+            }
+        }
+    }
     
 }
 
@@ -312,6 +563,56 @@
         }
     }
 
+        .carousel{
+            .carousel-inner{ 
+                .blur{
+                    max-height: 250px;
+                    .title-carousel-item{
+                        font-size: 10px!important;
+                    }
+                }
+                .carousel-item-container{
+                    width: 55vw;                
+                    .carousel-item{
+                        height: 300px;
+                        .img-container-carousel{
+                            height: 125px;
+                            width: 125px;
+                            .carousel-item-img{
+                                height: 125px;
+                                width: 125px;
+                            }
+                        }
+                        .content-carousel-item{
+                            .title-carousel-item{
+                                font-size: 12px!important;
+                            }
+                            .description-carousel-item{
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    /*Ajustes de tamaño carousel what clients says*/
+    #what-says{
+        height: 500px;
+        .carousel-special{           
+            .img1{
+                height: 100px;
+                top: 15%;
+                left: 42.5%;
+            }
+            .carousel-special-inner{
+                .person-container{
+                    height: 80%;
+                }
+            }
+        }
+    }
+
     /*Ajustes footer*/
     #footer{
         .links-footer-container{
@@ -332,6 +633,58 @@
             }
         }
     }
+
+    /*Ajuste de tamaño carousel what clients says*/
+    #what-says{
+        .carousel-special{   
+            .img1{
+                height: 100px;
+                top: 20%;
+                left: 41%;
+            }
+            .person-container{
+                .testimony-container{
+                    width: 70%!important;
+                    .testimony{
+                        font-size: 12px;
+                    }
+                    
+                }
+                .testimony-author{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #what-says{
+        .carousel-special{
+            .img1{
+                height: 80px;
+                top: 20%;
+                left: 42%;
+            }
+            .img2{
+                height: 60px!important;
+                top: 2% !important;;
+                left: 2%!important;
+            }
+            .img4{
+                left: 10%!important;
+            }
+            .img5{
+                height: 50px!important;
+            }
+            .carousel-special-inner{
+                .person-container{
+                    height: 90%;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width:400px){
@@ -356,6 +709,14 @@
                 &:hover{
                     font-size: 12px;
                 }
+            }
+        }
+    }
+    #what-says{
+        .carousel-special{
+            .img1{
+                top: 18%;
+                left: 38%;
             }
         }
     }

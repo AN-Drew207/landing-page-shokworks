@@ -1,0 +1,54 @@
+#what-says{
+    height: 600px;
+    .carousel-special{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        width: 100%;
+
+        .img{
+            transition: 0.5s ease-in;
+            position: absolute;
+        }
+
+        .carousel-special-inner{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            .person-container{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px 0px;
+                height: 60%;
+                z-index: 2;
+                .img-testimony{
+                    width: 100px;
+                    height: 100px;
+                }
+                .testimony-container{
+                    align-items: flex-start;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    padding: 20px 0px;
+                    width: 50%;
+                    .testimony{
+                        text-align: center;
+                        font-weight: 300;
+                    }
+                }
+                .testimony-author{
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
